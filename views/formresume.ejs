@@ -1,0 +1,170 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/style1.css" />
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script1.js" defer></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
+
+    <!-- CSS only -->
+<!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <title>Resume Generator</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  </head>
+  <body>
+   
+
+   <!-- Navbar Starts -->
+  <!-- <nav class="navbar navbar-expand-lg navbar-light ">
+      <div class="container-fluid">
+          <a href="#" class="navbar-brand" style="width: 700px;">Resume Builder</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+  
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-center">
+                  <li class="nav-item ">
+                      <a href="/" class="nav-link mx-2">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/create-resume" class="nav-link mx-2">Create Resume</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-link mx-2">Templates</a>
+                  </li>
+                  <li class="nav-item">
+                      <a href="/reach-us" class="nav-link mx-2">Reach Us!</a>
+                  </li>
+                  <li class="nav-item ms-3">
+                      <a href="#" class="btn btn-primary btn-rounded">Sign in</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </nav>  --> 
+<%-include("header")-%>
+    <form action="#" class="form" method="post" action="/">
+      <h1 class="text-center">Resume Generation</h1>
+      <!-- Progress bar -->
+      <div class="progressbar">
+        <div class="progress" id="progress"></div>
+        
+        <div
+          class="progress-step progress-step-active"
+          data-title="Personal"
+        ></div>
+        <div class="progress-step" data-title="Academics"></div>
+        <div class="progress-step" data-title="Skills"></div>
+        <div class="progress-step" data-title="Last Step"></div>
+      </div>
+
+      <!-- Steps -->
+      <div class="form-step form-step-active">
+        <div class="input-group">
+          <label for="First Name">First Name</label>
+          <input type="text" name="FirstName" id="First Name" />
+        </div>
+        <div class="input-group">
+          <label for="Last-Name">Last Name</label>
+          <input type="text" name="LastName" id="Last-Name" />
+        </div> 
+        <div class="input-group">
+            <label for="Father-Name">Father Name</label>
+            <input type="text" name="FatherName" id="Father-Name" />
+          </div>
+
+        <div class="input-group">
+            <label for="dob">Date of Birth</label>
+            <input type="date" name="dob" id="dob" />
+          </div>
+          <div class="input-group">
+            <label for="Nationality">Nationality</label>
+            <input type="text" name="Nationality" id="Nationality" />
+          </div>
+          <br>
+        <div class="next-btn btn btn-primary" style="margin-left: 450px;width: 126px;">
+            <a href="#" class="btn btn-next float-right btn-primary">Next</a>
+        </div>
+       
+      </div>
+
+<!-- step one -->
+
+      <div class="form-step">
+        <div class="input-group">
+          <label for="10th">10Th School Name</label>
+          <input type="text" name="sslcscl" id="10th" />
+        </div>
+        <div class="input-group">
+            <label for="10th-mark">Percentage scored in 10th</label>
+            <input type="number" name="sslcmark" id="10th-mark" />
+          </div>
+        <div class="input-group">
+          <label for="12th">12Th School Name</label>
+          <input type="text" name="hscscl" id="12th" />
+        </div>
+        <div class="input-group">
+            <label for="12th-mark">Percentage scored in 12th</label>
+            <input type="number" name="hscmark" id="12th-mark" />
+          </div>
+          <div class="input-group">
+            <label for="Collage-name">College Name</label>
+            <input type="text" name="clg" id="clg" />
+          </div>
+          <div class="input-group">
+              <label for="clg-mark">percentage scored in collage</label>
+              <input type="number" name="clgmark" id="clg-mark" />
+            </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev btn-primary">Previous</a>
+          <a href="#" class="btn btn-next btn-primary">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="klone">Known Frontend Language</label>
+          <input type="text" name="klone" id="klone" />
+        </div>
+        <div class="input-group">
+          <label for="kltwo">Known Backend Language</label>
+          <input type="text" name="kltwo" id="kltwo" />
+        </div>
+        <div class="input-group">
+          <label for="klthree">Known Database</label>
+          <input type="text" name="klthree" id="klthree" />
+        </div>
+         
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev btn-primary">Previous</a>
+          <a href="#" class="btn btn-next btn-primary">Next</a>
+        </div>
+      </div>
+      <div class="form-step">
+        <div class="input-group">
+          <label for="email">E-Mail</label>
+          <input type="email" name="email" id="email" />
+        </div>
+        <div class="input-group">
+          <label for="workexperience">Years of Work Experience</label>
+          <input
+            type="text"
+            name="workexperience"
+            id="workexperience"
+          />
+        </div>
+        <div class="btns-group">
+          <a href="#" class="btn btn-prev btn-primary">Previous</a>
+          <input type="submit" value="Submit" class="btn" />
+        </div>
+      </div>
+    </form>
+  </body>
+
+<%-include("footer")-%>

@@ -1,0 +1,58 @@
+<%- include("header") -%>
+
+
+<div class="text-center" style="padding: 20px;">
+<input type="button" onclick="generatePDF()" value="Download"  class="btn btn-info btn_print">
+</div>
+
+<section id="what" style="width: 75%;margin-left: 200px;"><div style="align-self:center;margin: 50px auto 500px auto; width: 50%;">
+    <div >
+    <h2>Personal Details</h2></div>
+
+<div>
+<h4>First Name: <%=FirstName %> </h4>
+<h4>Last Name: <%= LastName %> </h4>
+<h4>Father Name: <%= FatherName %> </h4>
+<h4>Date of Birth: <%= dob %> </h4>
+<h4>Nationality: <%= Nationality  %> </h4>
+<h4>Email: <%= email  %> </h4>
+
+</div>
+<br>
+<h2 >Education Details</h2>
+
+<table style="border:2px solid;align-self:center;">
+    <tr>
+        <th style="border:2px solid;">Course</th>
+        <th style="border:2px solid;">Institution</th>
+        <th style="border:2px solid;">Percentage</th>
+    </tr>
+    <tr>
+        <td style="border:2px solid;">
+            10th
+        </td>
+        <td style="border:2px solid;"><%=sslcscl %></td>
+        <td style="border:2px solid;"><%=sslcmark %></td>
+    </tr>
+    <tr>
+        <td style="border:2px solid;">12th</td>
+        <td style="border:2px solid;"><%=hscscl %></td>
+        <td style="border:2px solid;"><%=hscmark %></td>
+    </tr>
+    <tr>
+        <td style="border:2px solid;">UG</td>
+        <td style="border:2px solid;"><%=clg %></td>
+        <td style="border:2px solid;"><%=clgmark %></td>
+
+    </tr>
+</table>
+<br>
+<h2>Technical Skills</h2>
+<h4>Known FrontEnd Language : <%=klone %> </h4>
+<h4>Known BackEnd Language: <%=kltwo %> </h4>
+<h4>Known Database: <%=klthree %> </h4>
+<br>
+<h2>Work Experience</h2>
+<h4>Period:<%=workexperience%></h4>
+</div>
+</section>
